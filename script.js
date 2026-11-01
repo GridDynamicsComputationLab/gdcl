@@ -17,7 +17,7 @@ const NAV = [
   const h = document.getElementById('site-header');
   if(h) h.innerHTML =
     '<div class="wrap nav">' +
-      '<a class="brand" href="index.html"><img src="images/logo.png" alt="GDCL logo"><span>Grid Dynamics &amp; Computation<small>Laboratory</small></span></a>' +
+      '<a class="brand" href="index.html"><img src="images/logo-horizontal.jpg" alt="GDCL - Grid Dynamics and Computation Laboratory"></a>' +
       '<button class="burger" aria-label="Menu" onclick="document.getElementById(\'menu\').classList.toggle(\'open\')">&#9776;</button>' +
       '<nav><ul id="menu">' + links + '</ul></nav>' +
     '</div>';
@@ -130,4 +130,57 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
     const f = c.dataset.f;
     pubs.forEach(p => p.classList.toggle('hide', f !== 'all' && p.dataset.type !== f));
   }));
+})();
+
+/* ---------- home: events slideshow ---------- */
+(function(){
+  const show = document.getElementById('show'); if(!show) return;
+  const slides = show.querySelectorAll('.h-slide'), dots = show.querySelectorAll('.h-dots button');
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let i = 0, timer = null;
+  function go(n){
+    slides[i].classList.remove('on'); dots[i].classList.remove('on');
+    i = (n + slides.length) % slides.length;
+    slides[i].classList.add('on'); dots[i].classList.add('on');
+  }
+  function start(){ if(!reduce){ stop(); timer = setInterval(() => go(i + 1), 5000); } }
+  function stop(){ if(timer) clearInterval(timer); timer = null; }
+  show.querySelector('.prev').addEventListener('click', () => { go(i - 1); start(); });
+  show.querySelector('.next').addEventListener('click', () => { go(i + 1); start(); });
+  dots.forEach((d, k) => d.addEventListener('click', () => { go(k); start(); }));
+  show.addEventListener('mouseenter', stop); show.addEventListener('mouseleave', start);
+  show.addEventListener('focusin', stop); show.addEventListener('focusout', start);
+  let x0 = null;
+  show.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, {passive:true});
+  show.addEventListener('touchend', e => { if(x0 === null) return; const dx = e.changedTouches[0].clientX - x0; if(Math.abs(dx) > 40){ go(i + (dx < 0 ? 1 : -1)); start(); } x0 = null; });
+  start();
+})();
+
+/* ---------- home: equations drifting on sine paths behind the hero ---------- */
+(function(){
+  const box = document.querySelector('.h-eqs'); if(!box) return;
+  const eqs = [...box.querySelectorAll('.eq')];
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let W = 0, H = 0;
+  const st = eqs.map(() => ({
+    x: Math.random(), y: 0.08 + Math.random() * 0.62,        // haphazard start (fractions of the hero)
+    vx: (Math.random() < .5 ? -1 : 1) * (0.008 + Math.random() * 0.012),  // drift speed, hero widths per second
+    A: 10 + Math.random() * 26,                               // sine amplitude in px
+    w: 0.35 + Math.random() * 0.6,                            // angular speed, rad/s
+    ph: Math.random() * Math.PI * 2
+  }));
+  function size(){ W = box.clientWidth; H = box.clientHeight; }
+  function place(t){
+    eqs.forEach((el, i) => {
+      const s = st[i], ew = el.offsetWidth;
+      let fx = (s.x + s.vx * t) % 1; if(fx < 0) fx += 1;      // wrap around the edges
+      const x = fx * (W + ew) - ew;
+      const y = s.y * H + s.A * Math.sin(s.w * t + s.ph);
+      el.style.transform = 'translate(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px)';
+    });
+  }
+  size(); window.addEventListener('resize', size);
+  if(reduce){ place(0); return; }
+  const t0 = performance.now();
+  (function loop(now){ place((now - t0) / 1000); requestAnimationFrame(loop); })(t0);
 })();

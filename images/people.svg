@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e6f5ef"/><stop offset="1" stop-color="#dcecf8"/></linearGradient><linearGradient id="n" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#15A573"/><stop offset="1" stop-color="#0A87C8"/></linearGradient></defs>
+<rect width="900" height="640" fill="url(#bg)"/>
+<line x1="450" y1="320" x2="450" y2="100" stroke="#0A87C8" stroke-opacity=".35" stroke-width="2"/>
+<line x1="450" y1="100" x2="602" y2="186" stroke="#15A573" stroke-opacity=".3" stroke-width="2"/>
+<line x1="450" y1="320" x2="602" y2="186" stroke="#0A87C8" stroke-opacity=".35" stroke-width="2"/>
+<line x1="602" y1="186" x2="742" y2="282" stroke="#15A573" stroke-opacity=".3" stroke-width="2"/>
+<line x1="450" y1="320" x2="742" y2="282" stroke="#0A87C8" stroke-opacity=".35" stroke-width="2"/>
+<line x1="742" y1="282" x2="655" y2="408" stroke="#15A573" stroke-opacity=".3" stroke-width="2"/>
+<line x1="450" y1="320" x2="655" y2="408" stroke="#0A87C8" stroke-opacity=".35" stroke-width="2"/>
+<line x1="655" y1="408" x2="552" y2="527" stroke="#15A573" stroke-opacity=".3" stroke-width="2"/>
+<line x1="450" y1="320" x2="552" y2="527" stroke="#0A87C8" stroke-opacity=".35" stroke-width="2"/>
+<line x1="552" y1="527" x2="369" y2="484" stroke="#15A573" stroke-opacity=".3" stroke-width="2"/>
+<line x1="450" y1="320" x2="369" y2="484" stroke="#0A87C8" stroke-opacity=".35" stroke-width="2"/>
+<line x1="369" y1="484" x2="193" y2="430" stroke="#15A573" stroke-opacity=".3" stroke-width="2"/>
+<line x1="450" y1="320" x2="193" y2="430" stroke="#0A87C8" stroke-opacity=".35" stroke-width="2"/>
+<line x1="193" y1="430" x2="217" y2="290" stroke="#15A573" stroke-opacity=".3" stroke-width="2"/>
+<line x1="450" y1="320" x2="217" y2="290" stroke="#0A87C8" stroke-opacity=".35" stroke-width="2"/>
+<line x1="217" y1="290" x2="259" y2="151" stroke="#15A573" stroke-opacity=".3" stroke-width="2"/>
+<line x1="450" y1="320" x2="259" y2="151" stroke="#0A87C8" stroke-opacity=".35" stroke-width="2"/>
+<line x1="259" y1="151" x2="450" y2="100" stroke="#15A573" stroke-opacity=".3" stroke-width="2"/>
+<circle cx="450" cy="320" r="82" fill="#fff" opacity=".9"/>
+<circle cx="450" cy="320" r="74" fill="url(#n)"/>
+<text x="450" y="336" text-anchor="middle" fill="#fff" font-family="Montserrat,Arial,sans-serif" font-weight="700" font-size="46">LD</text>
+<circle cx="450" cy="100" r="58" fill="#fff" opacity=".9"/>
+<circle cx="450" cy="100" r="50" fill="url(#n)"/>
+<text x="450" y="111" text-anchor="middle" fill="#fff" font-family="Montserrat,Arial,sans-serif" font-weight="700" font-size="31">NR</text>
+<circle cx="602" cy="186" r="58" fill="#fff" opacity=".9"/>
+<circle cx="602" cy="186" r="50" fill="url(#n)"/>
+<text x="602" y="197" text-anchor="middle" fill="#fff" font-family="Montserrat,Arial,sans-serif" font-weight="700" font-size="31">AP</text>
+<circle cx="742" cy="282" r="58" fill="#fff" opacity=".9"/>
+<circle cx="742" cy="282" r="50" fill="url(#n)"/>
+<text x="742" y="293" text-anchor="middle" fill="#fff" font-family="Montserrat,Arial,sans-serif" font-weight="700" font-size="31">AK</text>
+<circle cx="655" cy="408" r="58" fill="#fff" opacity=".9"/>
+<circle cx="655" cy="408" r="50" fill="url(#n)"/>
+<text x="655" y="418" text-anchor="middle" fill="#fff" font-family="Montserrat,Arial,sans-serif" font-weight="700" font-size="31">S</text>
+<circle cx="552" cy="527" r="58" fill="#fff" opacity=".9"/>
+<circle cx="552" cy="527" r="50" fill="url(#n)"/>
+<text x="552" y="538" text-anchor="middle" fill="#fff" font-family="Montserrat,Arial,sans-serif" font-weight="700" font-size="31">MT</text>
+<circle cx="369" cy="484" r="58" fill="#fff" opacity=".9"/>
+<circle cx="369" cy="484" r="50" fill="url(#n)"/>
+<text x="369" y="495" text-anchor="middle" fill="#fff" font-family="Montserrat,Arial,sans-serif" font-weight="700" font-size="31">TG</text>
+<circle cx="193" cy="430" r="58" fill="#fff" opacity=".9"/>
+<circle cx="193" cy="430" r="50" fill="url(#n)"/>
+<text x="193" y="441" text-anchor="middle" fill="#fff" font-family="Montserrat,Arial,sans-serif" font-weight="700" font-size="31">MJ</text>
+<circle cx="217" cy="290" r="58" fill="#fff" opacity=".9"/>
+<circle cx="217" cy="290" r="50" fill="url(#n)"/>
+<text x="217" y="301" text-anchor="middle" fill="#fff" font-family="Montserrat,Arial,sans-serif" font-weight="700" font-size="31">ST</text>
+<circle cx="259" cy="151" r="58" fill="#fff" opacity=".9"/>
+<circle cx="259" cy="151" r="50" fill="url(#n)"/>
+<text x="259" y="162" text-anchor="middle" fill="#fff" font-family="Montserrat,Arial,sans-serif" font-weight="700" font-size="31">AG</text>
+</svg>
