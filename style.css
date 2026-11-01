@@ -154,7 +154,7 @@
   /* ===== multi-page additions ===== */
   nav a.active{color:var(--green)}
   nav a.active:not(.cta)::after{content:"";position:absolute;left:14px;right:14px;bottom:2px;height:3px;border-radius:3px;background:var(--grad)}
-  nav a.cta.active{background:var(--grad)}
+  nav a.cta.active{background:var(--grad);color:#fff}
   .pagehead{position:relative;overflow:hidden;background:radial-gradient(900px 360px at 85% -20%,#1d4a7a 0%,transparent 60%),var(--navy);color:#fff;padding:56px 0 50px}
   .pagehead .eq{position:absolute;font-family:"Cambria Math","Times New Roman",serif;font-style:italic;color:rgba(255,255,255,.08);font-size:1.4rem;white-space:nowrap;pointer-events:none}
   .pagehead .wrap{position:relative}

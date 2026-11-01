@@ -7,31 +7,33 @@
 <meta name="description" content="Principal investigator, researchers and students of the Grid Dynamics and Computation Laboratory.">
 <link rel="icon" href="images/favicon.png">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="pages.css">
 </head>
 <body>
 
 <header id="site-header"></header>
 
 <main>
-<section class="pagehead">
-  <span class="eq" style="top:18%;right:7%">λ = σ ± jω</span>
-  <span class="eq" style="bottom:12%;right:22%">ẋ = Ax + Bu</span>
-  <span class="eq" style="top:30%;right:40%">P<sub>e</sub> = P<sub>max</sub> sin δ</span>
+<section class="p-hero">
+  <img src="images/people.svg" alt="" style="object-position:50% 50%">
+  <div class="h-eqs" aria-hidden="true"><span class="eq">P<sub>e</sub> = P<sub>max</sub> sin δ</span><span class="eq">λ = σ ± jω</span><span class="eq">ẋ = Ax + Bu</span><span class="eq">det(λI − A) = 0</span><span class="eq">I = YV</span><span class="eq">ζ = −σ/|λ|</span><span class="eq">S = P + jQ</span></div>
   <div class="wrap">
-    <div class="crumb">Team</div>
-    <h1>People</h1>
-    <p>The researchers and students of the lab.</p>
+    <div class="p-crumb"><a href="index.html">Home</a><span aria-hidden="true">›</span><span>Team</span></div>
+    <h1>Our people</h1>
+    <p>The researchers and students of the lab, and the students who have worked with us.</p>
   </div>
 </section>
-<section class="alt" id="team">
+
+<section class="alt p-sec" id="team">
   <div class="wrap reveal">
-    
-    <div class="pi">
-      <div class="avatar">LD</div>
+    <div class="p-pi">
+      <div class="ava" aria-hidden="true">LD</div>
       <div>
-        <h3>Dr. Lokesh Kumar Dewangan</h3>
-        <div class="role">Principal Investigator · Assistant Professor, Department of Electrical Engineering, IIT Indore</div>
-        <p style="color:var(--muted);margin:8px 0 12px">Research on the control and dynamics of converter-infeed power systems. Motivated undergraduate and postgraduate students interested in this area are welcome to email their CV.</p>
+        <div class="eyebrow">Principal Investigator</div>
+        <h2>Dr. Lokesh Kumar Dewangan</h2>
+        <div class="role">Assistant Professor, Department of Electrical Engineering, IIT Indore</div>
+        <p style="color:var(--muted);margin-bottom:14px">Research on the control and dynamics of converter-infeed power systems. Motivated undergraduate and postgraduate students interested in this area are welcome to email their CV.</p>
         <div>
           <span class="pill">Multilevel converters (MMC)</span><span class="pill">Converter interaction and stability</span><span class="pill">Hybrid AC/DC systems</span><span class="pill">HVDC grid overlay</span><span class="pill">MMC in unbalanced and weak systems</span><span class="pill">Robust MMC control</span>
         </div>
@@ -51,43 +53,59 @@
       </div>
     </div>
 
-    <h3 class="grp">Postdoctoral researcher and PhD scholars</h3>
-    <div class="grid g3">
-      <div class="card person"><div class="avatar">NR</div><h3>Nibha Rani</h3><div class="role">Post-Doctoral Researcher · 2025-2027</div><p>Wide-area simulation frameworks for renewable energy and HVDC dynamic behaviour</p><p class="note">Sponsored by GRID-INDIA and IIT Bombay</p></div>
-      <div class="card person"><div class="avatar">AP</div><h3>Aditya Pandey</h3><div class="role">PhD Scholar · 2024-2029</div><p>Stability and interaction of multi-vendor converters in converter-infeed power systems</p></div>
-      <div class="card person"><div class="avatar">AK</div><h3>Amit Kumar</h3><div class="role">PhD Scholar · 2026-2031</div><p>Modelling and stability analysis of large converter-dominated networks</p></div>
-      <div class="card person"><div class="avatar">S</div><h3>Sanjeev</h3><div class="role">PhD Scholar · 2026-2031</div><p>Laboratory-scale prototype of a modular multilevel converter (MMC)</p></div>
-      <div class="card person"><div class="avatar">MT</div><h3>Minyahil Tanashu</h3><div class="role">Joint PhD Scholar</div><p class="note">Joint programme: IIT Indore and MIT Ethiopia. Co-supervisor: Dr. Sharad Kumar Singh</p></div>
-      <div class="card person"><div class="avatar">TG</div><h3>Tedo Gera</h3><div class="role">Joint PhD Scholar</div><p class="note">Joint programme: IIT Indore and MIT Ethiopia. Supervisor: Dr. Sharad Kumar Singh</p></div>
+    <div class="p-grp"><h2>Postdoctoral researcher and PhD scholars</h2></div>
+    <div class="p-people">
+      <article class="p-person"><div class="ava">NR</div><h3>Nibha Rani</h3><div class="role">Post-Doctoral Researcher · 2025-2027</div><p>Wide-area simulation frameworks for renewable energy and HVDC dynamic behaviour</p><p class="note">Sponsored by GRID-INDIA and IIT Bombay</p></article>
+      <article class="p-person"><div class="ava">AP</div><h3>Aditya Pandey</h3><div class="role">PhD Scholar · 2024-2029</div><p>Stability and interaction of multi-vendor converters in converter-infeed power systems</p></article>
+      <article class="p-person"><div class="ava">AK</div><h3>Amit Kumar</h3><div class="role">PhD Scholar · 2026-2031</div><p>Modelling and stability analysis of large converter-dominated networks</p></article>
+      <article class="p-person"><div class="ava">S</div><h3>Sanjeev</h3><div class="role">PhD Scholar · 2026-2031</div><p>Laboratory-scale prototype of a modular multilevel converter (MMC)</p></article>
+      <article class="p-person"><div class="ava">MT</div><h3>Minyahil Tanashu</h3><div class="role">Joint PhD Scholar</div><p class="note">Joint programme: IIT Indore and MIT Ethiopia. Co-supervisor: Dr. Sharad Kumar Singh</p></article>
+      <article class="p-person"><div class="ava">TG</div><h3>Tedo Gera</h3><div class="role">Joint PhD Scholar</div><p class="note">Joint programme: IIT Indore and MIT Ethiopia. Supervisor: Dr. Sharad Kumar Singh</p></article>
     </div>
-    <h3 class="grp">MS and M.Tech students</h3>
-    <div class="grid g3">
-      <div class="card person"><div class="avatar">MJ</div><h3>Maha Janani</h3><div class="role">MS Scholar · 2025-2027</div><p>Wide-area simulation frameworks for renewable energy and HVDC dynamic behaviour</p></div>
-      <div class="card person"><div class="avatar">ST</div><h3>Shailja Thakur</h3><div class="role">M.Tech Student · 2025-2027</div><p>Curve-fitted frequency-dependent model of a two-level converter connected to the grid</p></div>
-      <div class="card person"><div class="avatar">AG</div><h3>Aditya Garg</h3><div class="role">M.Tech Student · 2025-2027</div><p>Laboratory-scale MMC prototype</p></div>
+
+    <div class="p-grp"><h2>MS and M.Tech students</h2></div>
+    <div class="p-people">
+      <article class="p-person"><div class="ava">MJ</div><h3>Maha Janani</h3><div class="role">MS Scholar · 2025-2027</div><p>Wide-area simulation frameworks for renewable energy and HVDC dynamic behaviour</p></article>
+      <article class="p-person"><div class="ava">ST</div><h3>Shailja Thakur</h3><div class="role">M.Tech Student · 2025-2027</div><p>Curve-fitted frequency-dependent model of a two-level converter connected to the grid</p></article>
+      <article class="p-person"><div class="ava">AG</div><h3>Aditya Garg</h3><div class="role">M.Tech Student · 2025-2027</div><p>Laboratory-scale MMC prototype</p></article>
     </div>
-    <h3 class="grp">B.Tech project students (current and past)</h3>
-    <ul class="mini">
-      <li><b>Tanish Kamal</b> (2026)<br><span>Frequency-scanning-based stability assessment tool for converter-infeed power systems</span></li>
-      <li><b>Pradeep Swami</b> (2026)<br><span>Laboratory-scale MMC prototype</span></li>
-      <li><b>Daksh Chandel</b> (2026)<br><span>Digital system power analysis, from RTL to place-and-route</span></li>
-      <li><b>Yash Baghel</b> (2025)<br><span>Grey-box modelling of converter-interfaced power systems</span></li>
-      <li><b>Aman</b> (2025)<br><span>Grey-box modelling of converter-interfaced power systems</span></li>
-      <li><b>Maloth Karthikeya</b> (2025)<br><span>Primary and secondary controller design for hybrid multi-terminal HVDC systems</span></li>
-      <li><b>Jash Faladu</b> (2024)<br><span>Converter modelling for high-frequency applications using a black-box approach</span></li>
-      <li><b>Abhinn Tari</b> (2024)<br><span>Power system monitoring using drones</span></li>
+  </div>
+</section>
+
+<section class="p-sec">
+  <div class="wrap reveal">
+    <div class="p-grp" style="margin-top:0"><h2>B.Tech project students</h2><span>Current and past</span></div>
+    <ul class="p-plain">
+      <li><b>Tanish Kamal</b><time>2026</time><span>Frequency-scanning-based stability assessment tool for converter-infeed power systems</span></li>
+      <li><b>Pradeep Swami</b><time>2026</time><span>Laboratory-scale MMC prototype</span></li>
+      <li><b>Daksh Chandel</b><time>2026</time><span>Digital system power analysis, from RTL to place-and-route</span></li>
+      <li><b>Yash Baghel</b><time>2025</time><span>Grey-box modelling of converter-interfaced power systems</span></li>
+      <li><b>Aman</b><time>2025</time><span>Grey-box modelling of converter-interfaced power systems</span></li>
+      <li><b>Maloth Karthikeya</b><time>2025</time><span>Primary and secondary controller design for hybrid multi-terminal HVDC systems</span></li>
+      <li><b>Jash Faladu</b><time>2024</time><span>Converter modelling for high-frequency applications using a black-box approach</span></li>
+      <li><b>Abhinn Tari</b><time>2024</time><span>Power system monitoring using drones</span></li>
     </ul>
-    <h3 class="grp">Interns (current and past)</h3>
-    <ul class="mini">
-      <li><b>Kajal Sahu</b> (2026)<br><span>Govt. J. Yoganandam Chhattisgarh College, Raipur</span></li>
-      <li><b>Alok Kumar</b> (2025)<br><span>IIEST Shibpur</span></li>
-      <li><b>Sandeep Srinivasan</b> (2025)<br><span>NIT Trichy</span></li>
-      <li><b>Aryan Prajapati</b> (2025)<br><span>MANIT Bhopal</span></li>
-      <li><b>Ankita Kumari</b> (2024)<br><span>IIT (ISM) Dhanbad</span></li>
-      <li><b>Isha Shree</b> (2024)<br><span>MNIT Jaipur</span></li>
+    <div class="p-grp"><h2>Interns</h2><span>Current and past</span></div>
+    <ul class="p-plain">
+      <li><b>Kajal Sahu</b><time>2026</time><span>Govt. J. Yoganandam Chhattisgarh College, Raipur</span></li>
+      <li><b>Alok Kumar</b><time>2025</time><span>IIEST Shibpur</span></li>
+      <li><b>Sandeep Srinivasan</b><time>2025</time><span>NIT Trichy</span></li>
+      <li><b>Aryan Prajapati</b><time>2025</time><span>MANIT Bhopal</span></li>
+      <li><b>Ankita Kumari</b><time>2024</time><span>IIT (ISM) Dhanbad</span></li>
+      <li><b>Isha Shree</b><time>2024</time><span>MNIT Jaipur</span></li>
     </ul>
   </div>
 </section>
+<section class="h-join p-sec tight">
+  <div class="wrap h-join-inner reveal">
+    <div>
+      <h3>Join the lab</h3>
+      <p>PhD, MS and M.Tech positions, project roles (JRF, Project Associate), B.Tech projects and summer internships.</p>
+    </div>
+    <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSeubSmCvU0OahdhebVljgupJyZ5eQfEjfkGy8SmHtwso7TkWA/viewform?usp=dialog" target="_blank" rel="noopener">Submit your CV</a>
+  </div>
+</section>
+<div style="height:84px"></div>
 </main>
 
 <footer id="site-footer"></footer>

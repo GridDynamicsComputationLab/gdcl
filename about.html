@@ -7,46 +7,90 @@
 <meta name="description" content="About the Grid Dynamics and Computation Laboratory at the Department of Electrical Engineering, IIT Indore.">
 <link rel="icon" href="images/favicon.png">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="pages.css">
 </head>
 <body>
 
 <header id="site-header"></header>
 
 <main>
-<section class="pagehead">
-  <span class="eq" style="top:18%;right:7%">λ = σ ± jω</span>
-  <span class="eq" style="bottom:12%;right:22%">ẋ = Ax + Bu</span>
-  <span class="eq" style="top:30%;right:40%">P<sub>e</sub> = P<sub>max</sub> sin δ</span>
+<section class="p-hero">
+  <img src="images/hero-grid.svg" alt="" style="object-position:80% 60%">
+  <div class="h-eqs" aria-hidden="true"><span class="eq">P<sub>e</sub> = P<sub>max</sub> sin δ</span><span class="eq">λ = σ ± jω</span><span class="eq">ẋ = Ax + Bu</span><span class="eq">det(λI − A) = 0</span><span class="eq">I = YV</span><span class="eq">ζ = −σ/|λ|</span><span class="eq">S = P + jQ</span></div>
   <div class="wrap">
-    <div class="crumb">About the lab</div>
+    <div class="p-crumb"><a href="index.html">Home</a><span aria-hidden="true">›</span><span>About</span></div>
     <h1>Where grid physics meets computation</h1>
     <p>Control and dynamics of converter-infeed power systems at IIT Indore.</p>
   </div>
 </section>
 
-<section>
-  <div class="wrap reveal">
-    <div class="about-top">
-      <div><p class="lead">The Grid Dynamics and Computation Laboratory is part of the Department of Electrical Engineering at the Indian Institute of Technology Indore. We study the control and dynamics of converter-infeed power systems to improve the performance and stability of modern electrical grids, with a focus on HVDC grids and modular multilevel converters (MMC).</p></div>
-      <div class="vlogo"><img src="images/logo-vertical.jpg" alt="GDCL - Grid Dynamics and Computation Laboratory logo"></div>
-    </div>
-    <div class="grid g3">
-      <div class="card"><div class="icon">🎯</div><h3>Mission</h3><p>Enable stable, secure and efficient operation of converter-dominated power systems through rigorous modelling, control design and scalable computation.</p></div>
-      <div class="card"><div class="icon">🔬</div><h3>Approach</h3><p>We combine analytical modelling, eigenvalue and modal analysis, frequency-domain and EMT simulation, and laboratory-scale MMC prototypes.</p></div>
-      <div class="card"><div class="icon">🤝</div><h3>Community</h3><p>We collaborate with universities, research institutes and industry in India and abroad, including KU Leuven, IIT Bombay, IISc, IIT Roorkee, the University of Toulouse and GRID-INDIA.</p></div>
-    </div>
-    <div class="stats">
-      <div class="stat"><b>4</b><span>Journal papers published</span></div>
-      <div class="stat"><b>15</b><span>Conference papers</span></div>
-      <div class="stat"><b>9</b><span>Postdoc, PhD and PG members</span></div>
-      <div class="stat"><b>2023</b><span>Active at IIT Indore since</span></div>
-    </div>
-    <div class="more" style="display:flex;gap:12px;flex-wrap:wrap">
-      <a class="btn primary" href="research.html">Our research</a>
-      <a class="btn ghost" style="border-color:var(--blue);color:var(--blue)" href="team.html">Meet the team</a>
+<section class="h-statement">
+  <div class="wrap h-statement-grid reveal">
+    <h2 class="h-big">A laboratory for the converter-dominated power grids of tomorrow.</h2>
+    <div>
+      <p>The Grid Dynamics and Computation Laboratory is part of the Department of Electrical Engineering at the Indian Institute of Technology Indore. We study the control and dynamics of converter-infeed power systems to improve the performance and stability of modern electrical grids, with a focus on HVDC grids and modular multilevel converters (MMC).</p>
+      <a class="h-more" href="research.html">Our research <b aria-hidden="true">›</b></a>
     </div>
   </div>
 </section>
+
+<section class="h-blocks">
+  <div class="wrap">
+    <article class="h-row reveal">
+      <div class="h-img"><img src="images/hvdc.svg" alt="Illustration of HVDC transmission towers"></div>
+      <div class="h-txt">
+        <div class="eyebrow">Mission</div>
+        <h3>Stable, secure and efficient converter-dominated grids</h3>
+        <p>We enable stable, secure and efficient operation of converter-dominated power systems through rigorous modelling, control design and scalable computation.</p>
+        <a class="h-more" href="research.html">Research themes <b aria-hidden="true">›</b></a>
+      </div>
+    </article>
+
+    <article class="h-row flip reveal">
+      <div class="h-img"><img src="images/stability.svg" alt="Illustration of eigenvalues on the complex plane with a damped oscillation"></div>
+      <div class="h-txt">
+        <div class="eyebrow">Approach</div>
+        <h3>Analysis, simulation and hardware</h3>
+        <p>We combine analytical modelling, eigenvalue and modal analysis, frequency-domain and EMT simulation, and laboratory-scale MMC prototypes.</p>
+        <a class="h-more" href="publications.html">Publications <b aria-hidden="true">›</b></a>
+      </div>
+    </article>
+
+    <article class="h-row reveal">
+      <div class="h-img"><img src="images/people.svg" alt="Network illustration of lab members"></div>
+      <div class="h-txt">
+        <div class="eyebrow">Community</div>
+        <h3>Working with partners in India and abroad</h3>
+        <div class="p-chips"><span>KU Leuven</span><span>IIT Bombay</span><span>IISc Bangalore</span><span>IIT Roorkee</span><span>University of Toulouse</span><span>GRID-INDIA</span><span>École Centrale de Nantes</span><span>NIT Kurukshetra</span><span>MIT Ethiopia</span></div><p>We collaborate with universities, research institutes and industry, and welcome new partners for joint projects, student exchanges and visits.</p>
+        <a class="h-more" href="team.html">Meet the team <b aria-hidden="true">›</b></a>
+      </div>
+    </article>
+
+  </div>
+</section>
+<section class="h-join p-sec tight">
+  <div class="wrap h-join-inner reveal">
+    <div>
+      <h3>Join the lab</h3>
+      <p>PhD, MS and M.Tech positions, project roles (JRF, Project Associate), B.Tech projects and summer internships.</p>
+    </div>
+    <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSeubSmCvU0OahdhebVljgupJyZ5eQfEjfkGy8SmHtwso7TkWA/viewform?usp=dialog" target="_blank" rel="noopener">Submit your CV</a>
+  </div>
+</section>
+<section class="h-ask">
+  <div class="wrap h-ask-grid reveal">
+    <div>
+      <h2>Questions about our research?</h2>
+      <p class="lead">Collaborations, student enquiries and visits are welcome. Write to <a href="mailto:lokesh@iiti.ac.in">lokesh@iiti.ac.in</a> or use the contact form.</p>
+    </div>
+    <div class="h-ask-btns">
+      <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfERuCvrAT9KfMFXqS3rf31dA7aDRgN2YZx3nTAeigzly0vkQ/viewform?usp=dialog" target="_blank" rel="noopener">Contact us</a>
+      <a class="btn outline" href="contact.html">Address and map</a>
+    </div>
+  </div>
+</section>
+
 </main>
 
 <footer id="site-footer"></footer>
